@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="blog-div">
+        <p>Blogs</p>
+    </div>
+
+    <div class="main-container">
+        <input type="text" class="input-1" placeholder="Title 1">
+        <input type="text" class="input-2" placeholder="some text">
+        <input type="text" class="input-3" placeholder="author here..">
+        <input *ngIf="!editStatus" type="button" value="Add" class="btn1" (click)="addPost()">
+        <input *ngIf="editStatus" type="button" value="Save" class="btn2" (click)="savePost()">
+
+        <table class="table">
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Text</th>
+                <th>Author</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        <table class="table2">
+            <tr *ngFor="let blog of blogArr; index as i">
+                <td>{{i+1}}</td>
+                <td>{{blog.title}}</td>
+                <td>
+                    {{ blog.text | slice:0:10 }}
+                    <span *ngIf="blog.text.length > 10">...</span>
+                </td>
+                <td>{{blog.author}}</td>
+                <td><button class="edit-btn" (click)="edit(blog)">Edit</button></td>
+                <td><button [disabled]="editStatus" class="delete-btn" (click)="delete(blog)">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+</div>

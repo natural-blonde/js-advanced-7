@@ -1,0 +1,36 @@
+* {
+    font-family: monospace;
+  }
+  
+  header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    color: white;
+    background-color: #16191E;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+
+    .blog-text {
+      color: rgb(197, 196, 196);
+      margin-right: 20px;
+      transition: all 0.3s;
+      font-size: 17px;
+      height: 10px;
+      cursor: pointer;
+    }
+  
+    .admin-text {
+      @extend .blog-text
+    }
+  
+    .admin-text:hover {
+      color: #fff;
+    }
+  
+    .blog-text:hover {
+      color: #fff;
+    }
+  }  

@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "FREE PIZZA",
+      "text": "FREE PRIZZA CUZ WHY NOT",
+      "author": "marek :P",
+      "id": 1
+    },
+    {
+      "title": "some title here",
+      "text": "I CANNOT READ",
+      "author": "I DONT GIVE A SHIT",
+      "id": 3
+    }
+  ]
+}

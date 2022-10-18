@@ -1,0 +1,15 @@
+.blog {
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+
+    .blog {
+        margin-top: 50px;
+        margin-right: 150px;
+        .author-text {
+            color: lightblue;
+        }
+    }
+}

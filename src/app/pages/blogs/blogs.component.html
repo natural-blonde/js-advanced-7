@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="blog" *ngFor="let blog of arr; index as i">
+        <img src="https://jobs.dominos.com/images/logo.png" alt="">
+        <p class="author-text">{{blog.author | uppercase}}</p>
+        <p>{{blog.title}}</p>
+        <p>{{blog.text}}</p>
+    </div>
+</div>
